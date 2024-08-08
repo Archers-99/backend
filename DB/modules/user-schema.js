@@ -6,7 +6,8 @@ const userschema = new schema({
   'password': { type: SchemaTypes.String, required: true, minLength : 8,maxLength : 100 },
   'name': { type: SchemaTypes.String, required: true },
   'phone': { type: SchemaTypes.String },
-  'info': { type: SchemaTypes.String }
+  'info': { type: SchemaTypes.String },
+  'flag':{type:SchemaTypes.Boolean}
 });
 const usermodel = mongoose.model("user", userschema);
 export default usermodel;
