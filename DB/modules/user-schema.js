@@ -11,7 +11,12 @@ const slotSchema = new Schema({
         default: false
     }
 })
-
+const dateSchedule = new Schema({
+    date : {
+        type: String
+    },
+    slots : [slotSchema]
+})
 const userschema = new schema({
   'email': { type: SchemaTypes.String, required: true, unique: true },
   'password': { type: SchemaTypes.String, required: true, minLength : 8,maxLength : 100 },
