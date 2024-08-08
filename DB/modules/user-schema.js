@@ -26,9 +26,7 @@ const userschema = new schema({
   'flag':{type:SchemaTypes.Boolean},
   'dates' : [dateSchedule]
 });
-const usermodel = mongoose.model("user", userschema);
-const Slot = mongoose.model('Slot', slotSchema);
-const DateSchedule = mongoose.model('DateSchedule', dateSchedule);
-export default usermodel;
-export default dateSchedule;
-export default slotSchema;
+export const usermodel = mongoose.model("user", userschema);
+export const Slot = mongoose.model('Slot', slotSchema);
+export const DateSchedule = mongoose.model('DateSchedule', dateSchedule);
+
