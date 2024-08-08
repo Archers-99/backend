@@ -27,4 +27,6 @@ const userschema = new schema({
   'dates' : [dateSchedule]
 });
 const usermodel = mongoose.model("user", userschema);
+const Slot = mongoose.model('Slot', slotSchema);
+const DateSchedule = mongoose.model('DateSchedule', dateSchedule);
 export default usermodel;
